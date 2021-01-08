@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+/**Custom Properties**/
+:root{
+    --colorPrimario: #667eea;
+    --fuentePrincipal: 'Raleway', sans-serif;
+    --fuenteTercera: 'Nerko One', cursive;
+    --fuenteTexto: 'Roboto', sans-serif;
+    --colorFondo: #fff;
+    --colorSecundario: #764ba2;
+    --background: linear-gradient(135deg,#419fbb7e 0%, #203dbe98 100%);
+
+}
+
+/**Globales**/
+
+.center{
+    text-align: center;
+}
+
+.contenedor{
+    width: 98%;
+    margin: 0 auto;
+  }
+
+  @media only screen and (min-width:480px){
+   .contenedor{
+     width: 95%;
+   }
+  }
+
+  @media only screen and (min-width:768px){
+   .contenedor{
+     width: 90%;
+   }
+  }
+
+  @media only screen and (min-width:992px){
+   .contenedor{
+     width: 95%;
+     max-width: 1200px;
+   }
+  }
+
+  .seccion{
+    padding:30px 0;
+  }
+
+  .seccion p{
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  h2{
+   font-family: 'Oswald', sans-serif;
+   font-size: 2.4em;
+   text-transform: uppercase;
+   text-align: center;
+  }
+
+/**Estilos generales**/
+
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2{
+    margin: 0 0 70px 0;
+    font-size: 3rem;
+    text-align: center;
+}
+
+/**Contenedor Principal**/
+
+
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 80px 0;
+}
+
+.subtitle{
+    color: var(--colorPrimario);
+    font-size: 2,5rem;
+    margin-bottom: 35px;
+}
+
+.hero{
+    height: 100vh;
+    background-image:var(--background), url('../img/wallpapper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
+.hero .container{
+    padding: 0;
+}
+
+.hero-text{
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.hero-title{
+    font-size: 2rem;
+}
+
+.hero-subtitle{
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 15px 0;
+}
+
+@media (min-width: 768px){
+    .hero-title{
+        font-size: 3.2rem;
+        text-align: left;
+    }
+    
+    .hero-subtitle{
+        font-size: 2rem;
+        font-weight: 300;
+        margin: 15px 0;
+    }
+}
+
+@media (max-width:768px){
+    section.hero-container{
+       width: 100%;
+       text-align: center;
+    }
+
+    .hero{
+        height: 60vh
+    }
+
+    .hero-title{
+        font-size: 3.5rem;
+    }
+}
+
+
+
+.hero-para{
+    font-size: 30px;
+    font-family: var(--fuenteTercera);
+}
+
+.hero-a{
+    border: 1px solid #fff;
+    border-radius: 25px;
+    font-size: 20px;
+    padding: 15px;
+    color: #fff;
+    transition: ease-in-out .3s;
+    font-weight: 700;
+}
+
+.hero-a:hover{
+    background-color: #fff;
+    color: #6D6AB1;
+}
+
+.nav{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+@media (min-width:768px){
+    .nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 70px;
+        align-items: center;
+        font-weight: 700;
+    }
+}
+
+.hero-container{
+    display: flex;
+
+    align-items: center;
+    color: #fff;
+}
+
+@media (min-width:768px){
+    .hero-container{
+        height: calc(100vh - 70px);
+    }
+}
+
+
+
+.hero-wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+
+/**Enlace**/
+
+a{
+    color: #ffffff;
+    
+}
+
+a:hover{
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+/**Lista**/
+ul{
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+/**Cuenta regresiva**/
+
+div.cuenta-regresiva ul li{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  
+  @media only screen and (min-width:768px){
+    div.cuenta-regresiva ul li{
+      width: 25%;
+      float:left;
+    }
+  }
+
+  /**numero rosado**/
+
+  p.numero{
+    color: rgb(0, 0, 0);
+    font-size: 4em;
+    display: block;
+    margin: 0 0 10px 0;
+    font-family: 'Oswald', sans-serif;
+  }
+
+
+
+/**Seccion**/
+
+.cuenta-reg{
+    margin-bottom: 150px
+}
+
+/**Texto**/
+
+p cite{
+   font-size: 2rem; 
+}
